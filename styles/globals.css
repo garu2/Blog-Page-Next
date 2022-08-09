@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.google.com/specimen/Overpass?preview.text_type=custom');
+@import url('https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom'); 
 
 html,
 body {
@@ -19,7 +20,8 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 1200px;
 }
 

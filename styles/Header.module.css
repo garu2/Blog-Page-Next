@@ -1,4 +1,34 @@
 .header {
-    background: rgb(255,122,133);
-    background: linear-gradient(90deg, rgba(255,122,133,1) 35%, rgba(255,82,93,1) 100%);
+    /* background: rgb(255,122,133); */
+    background:  url("../public/bg-hero.svg"),linear-gradient(90deg, rgba(255,122,133,1) 35%, rgba(255,82,93,1) 100%);
+    background-position: 31% 50%;
+    background-size: 220%;
+    border-radius: 0 0 0 50px;
+    height: 445px;
+
+}
+
+.menuLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+}
+.menuLogo nav {
+    display: flex;
+    gap: 38%;
+    justify-content: flex-end;
+    color: #fff;
+}
+.menuLogo nav a {
+    font-weight: 600;
+}
+.bigTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bigTitle h2 {
+    font-size: 86px;
+    font-weight: 800;
 }
