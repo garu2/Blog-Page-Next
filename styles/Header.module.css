@@ -3,7 +3,7 @@
     background:  url("../public/bg-hero.svg"),linear-gradient(90deg, rgba(255,122,133,1) 35%, rgba(255,82,93,1) 100%);
     background-position: 31% 50%;
     background-size: 220%;
-    border-radius: 0 0 0 50px;
+    border-radius: 0 0 0 100px;
     height: 445px;
 
 }
@@ -31,4 +31,5 @@
 .bigTitle h2 {
     font-size: 86px;
     font-weight: 800;
+    color: #fff;
 }
