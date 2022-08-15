@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Header from './Header';
 import Footer from './Footer';
 
-const Layout = ({ children, pagina }) => {
+const Layout = ({ children, pagina, titleHero, isSingle }) => {
   return (
     <div>
         <Head>
@@ -10,8 +10,8 @@ const Layout = ({ children, pagina }) => {
             <meta name="description" content="Blog page" />
         </Head>
 
-        <Header/>
-        { children }
+        <Header titleHero={titleHero} isSingle={isSingle} />
+          { children }
         <Footer/>
     </div>
     

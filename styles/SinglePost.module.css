@@ -1,0 +1,12 @@
+.singlePost {
+    text-align: center;
+
+
+    max-width: 1000px;
+    margin: 4% auto 5%;
+}
+
+.singlePost p:last-of-type {
+    line-height: 31px;
+    font-size: 21px;
+}

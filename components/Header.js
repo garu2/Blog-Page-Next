@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Header.module.css";
 
-const Header = () => {
+const Header = ({ titleHero, isSingle }) => {
     return (
         <header className={styles.header}>
             <div className={`container  ${styles.menuLogo}`}>
@@ -19,7 +19,7 @@ const Header = () => {
                 </nav>
             </div>
             <div className={`container ${styles.bigTitle}`}>
-                <h2>Blog Page</h2>
+                <h2 className={isSingle}>{ titleHero }</h2>
             </div>
         </header>
     )
