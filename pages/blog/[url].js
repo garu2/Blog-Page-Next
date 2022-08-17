@@ -1,20 +1,21 @@
-import Layout from "../components/Layout"
-import { useRouter } from 'next/router';
+import Layout from "../../components/Layout"
+//import { useRouter } from 'next/router';
 
 import Image from "next/image";
-import style from "../styles/SinglePost.module.css";
-import { formatDate } from "../helpers";
+import style from "../../styles/SinglePost.module.css";
+import { formatDate } from "../../helpers";
+
+
 export default function SingleBlog({ single }) {
-    const router = useRouter();
-    console.log(single);
-    const { contenido, createdAt, titulo, imagen: {url} } = single;
- 
-    console.log('url: ', url);
+    //const router = useRouter();
+
+    const { contenido, createdAt, titulo, imagen } = single[0];
+
     return (
             <Layout pagina={titulo} titleHero={titulo} isSingle="titleHero">
                 <div className={` ${style.singlePost}`}>
 
-                    <Image src={`http://localhost:1337${url}`}
+                    <Image src={`${process.env.NEXT_PUBLIC_API_URL}${imagen?.url}`}
                         alt={titulo}
                         width={800}
                         height={400}
@@ -29,9 +30,9 @@ export default function SingleBlog({ single }) {
 
 export async function getServerSideProps({ query }) {
     //console.log("query: ", query);
-    const { id } = query;
-    const url = `http://localhost:1337/blogs/${id}`;
-    const response = await fetch(url);
+    const { url } = query;
+    const urlNew = `${process.env.API_URL}/blogs?url=${url}`;
+    const response = await fetch(urlNew);
     const responseJson = await response.json();
     return {
         props: {

@@ -4,16 +4,16 @@ import Image from 'next/image';
 import styles from "../styles/CardPost.module.css";
 import  { formatDate } from '../helpers';
 
-const CardPost = ({ title, summary, id, image, date }) => {
+const CardPost = ({ title, summary, id, image, date, url }) => {
 
     return (
-        <Link href={`/${id}`}>
+        <Link href={`/blog/${url}`}>
             <article className={styles.cardPost}>
                 
                 <Image  
                     width={400}
                     height={200}
-                    src={`http://localhost:1337${image}`} 
+                    src={`${process.env.NEXT_PUBLIC_API_URL}${image}`} 
                     alt={title} 
                 />
                 <div>

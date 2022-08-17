@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import CardPost from '../components/CardPost';
 
 export default function Home({ posts }) {
-  console.log("Post: ", posts);
+
   return (
     <div >
 
@@ -22,6 +22,7 @@ export default function Home({ posts }) {
                 image={item.imagen.formats.small.url}
                 summary={item.resumen}
                 title={item.titulo}
+                url={item.url}
               />
             ))
           }
@@ -30,18 +31,16 @@ export default function Home({ posts }) {
         
       </Layout>
       
-
-      
     </div>
   )
 }
 
 export async function getServerSideProps() {
-  const url = 'http://localhost:1337/blogs';
+  const url = `${process.env.API_URL}/blogs`;
   //const url = 'http://localhost:1337/blogs/62f664ee9362ba3f00884ba2';
   const response = await fetch(url);
   const responseJson = await response.json();
-  //console.log("res: ", responseJson);   
+  //console.log("URL:URL ", responseJson);   
 
   return {
     props: {

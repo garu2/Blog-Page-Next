@@ -18,8 +18,7 @@ const Footer = () => {
                 <Link href="/contact">Contact</Link>
             </div>
             <div className="container">
-                <h3> footer</h3>
-
+                <p className="author">🪐 by <a href="https://github.com/garu2" target="_blank">GaryAT</a></p>
             </div>
 
         </footer>

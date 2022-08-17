@@ -8,6 +8,7 @@ const Layout = ({ children, pagina, titleHero, isSingle }) => {
         <Head>
             <title>Blog - {pagina}</title>
             <meta name="description" content="Blog page" />
+            <link rel="icon" href="/blog-icon.svg" />
         </Head>
 
         <Header titleHero={titleHero} isSingle={isSingle} />

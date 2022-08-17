@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.google.com/specimen/Overpass?preview.text_type=custom');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.google.com/specimen/Overpass?preview.text_type=custom'); */
 @import url('https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom'); 
 
 html,
@@ -27,6 +27,20 @@ a {
 
 .container h2.titleHero {
   font-size: 53px;
+}
+
+p.author {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  gap: 7px;
+  color: #fff;
+  margin-bottom: 0;
+}
+p.author a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
