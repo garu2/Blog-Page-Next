@@ -18,7 +18,7 @@ const Footer = () => {
                 <Link href="/contact">Contact</Link>
             </div>
             <div className="container">
-                <p className="author">🪐 by <a href="https://github.com/garu2" target="_blank">GaryAT</a></p>
+                <p className="author">🪐 by <a href="https://github.com/garu2" target="_blank" rel="noopener noreferrer">GaryAT</a></p>
             </div>
 
         </footer>
