@@ -5,7 +5,9 @@
  [Deploy](https://blog-page-next.vercel.app/)
 
 ## 💻Tutorial
-[YouTube](https://youtu.be/Hc89hbmpYZQ)
+<a href='https://youtu.be/Hc89hbmpYZQ' target='_blank'>
+    <img width='30%' src='https://img.youtube.com/vi/Hc89hbmpYZQ/mqdefault.jpg' alt='Blog page nextjs' />
+</a>
 
 ## 📦Getting Started
 ```
